@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'proyectoAngular';
+  //myImange: string = "assets/img/video-2.mp4"
 }

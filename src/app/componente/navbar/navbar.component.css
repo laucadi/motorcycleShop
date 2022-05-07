@@ -1,0 +1,44 @@
+.navbar {
+  background-color: transparent;
+  font-family: 'Quicksand', sans-serif;
+  color: aliceblue;
+
+}
+
+.nav-link {
+  position: relative;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  color: aliceblue;
+
+}
+
+
+
+.nav-link:after {
+  content: "";
+  position: absolute;
+  background-color: #bfbd31;
+  height: 3px;
+  width: 0%;
+  left: 0;
+  bottom: 0px;
+}
+
+.nav-link:hover:after {
+  width: 100%;
+  transition: 0.3s;
+}
+
+.logIn,
+.btn__container {
+  background-color: #bfbd31;
+  border-radius: 10px;
+  color: #121c20;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.logIn:hover {
+  background-color: #121c20;
+  color: #bfbd31;
+}

@@ -1,0 +1,163 @@
+.row {
+    height: 100vh;
+}
+
+.portada {
+    background-image: url("https://images.pexels.com/photos/4922683/pexels-photo-4922683.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portada h1 {
+    font-size: 4em;
+    font-family: 'Libre Baskerville', serif;
+    color: aliceblue;
+    background-color: #bfbd31ab;
+    padding: 10px;
+
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.barra {
+    background-color: black;
+}
+
+.btn-group {
+    margin: 20px 10px 20px 10px;
+}
+
+.btn-group button {
+    border-radius: 10px;
+    border: 2px solid #bfbd31;
+    color: #bfbd31;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.btn-group button:hover {
+    border: 2px solid black;
+    color: black;
+    background-color: #bfbd31;
+    padding: 13px;
+}
+
+.cascos {
+    background-color: black;
+    height: 80vh;
+}
+
+
+.casco-1 h3 {
+    font-family: 'Libre Baskerville', serif;
+}
+
+.titulo {
+
+    border-bottom: 1px solid #bfbd31;
+    height: 90px;
+}
+
+.casco-2 a {
+    color: #6e6c0f;
+    text-decoration: none;
+    margin-left: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.tarjetas {
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.card {
+    margin: 50px 10px 0px 10px;
+    border-radius: 15px;
+}
+
+.card:hover {
+    border: 2px solid #bfbd31;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.card-body h5 {
+    font-family: 'Libre Baskerville', serif;
+}
+
+.card-body p {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.card-body i {
+    color: #bfbd31;
+}
+
+.marcas {
+    height: 40vh;
+    background-image: url("../../../assets/img/bg-pattern.png");
+
+}
+
+.logos {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.logo-1 {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    background-image: url("data:image/png;base64,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");
+}
+
+.logo-2 {
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+    background-image: url("https://cascoscertificados.org/wp-content/uploads/2019/01/logo-shaft-pro.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 100px;
+}
+
+.logo-3 {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    background-image: url("https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c46e.png");
+    background-size: contain;
+
+}
+
+.logo-4 {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    background-image: url("https://estaesmivuelta.com/wp-content/uploads/2022/01/LOGOS-ADT-MOTOWEAR-2019.png");
+    background-size: contain;
+
+}
+
+.video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    padding: 20px 20px;
+    position: relative;
+
+}
+
+.video video {
+    width: 60vw;
+
+}

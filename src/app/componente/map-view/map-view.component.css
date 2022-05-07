@@ -1,0 +1,39 @@
+#mapa {
+    width: 100vw;
+    height: 500px;
+    position: relative;
+}
+
+.titulo h3 {
+    background-color: black;
+    color: aliceblue;
+    margin: 0;
+    padding-bottom: 60px;
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2.5em;
+    font-weight: bold;
+    position: relative;
+    cursor: pointer;
+}
+
+.titulo h3::after {
+    content: "";
+    position: absolute;
+    background-color: #bfbd31;
+    height: 3px;
+    width: 0px;
+    left: 190px;
+    bottom: 30px;
+    transition: 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.titulo h3:hover::after {
+    content: "";
+    position: absolute;
+    background-color: #bfbd31;
+    height: 3px;
+    width: 800px;
+    left: 190px;
+    bottom: 30px;
+}
