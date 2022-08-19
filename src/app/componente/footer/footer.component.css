@@ -7,24 +7,14 @@
 
 }
 
-/* .footer::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.6);
-  }*/
 .rowPrimary {
   color: rgb(239, 242, 240);
   position: relative;
   display: grid;
-  grid-template-columns: 2fr 1fr 2fr;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
   align-items: stretch;
   padding: 80px 80px;
-
-
+  flex-wrap: wrap;
 }
 
 .column {
@@ -107,6 +97,8 @@ ul li a:hover {
   justify-content: space-around;
   text-align: center;
   position: relative;
+
+
 }
 
 .rowSecondary i {
@@ -155,4 +147,11 @@ ul li a:hover {
   box-shadow: 4px 100px 61px rgba(0, 0, 0, 0.7) inset;
   -webkit-box-shadow: 4px 380px 100px rgba(0, 0, 0, 0.623) inset;
   -moz-box-shadow: 4px 100px 61px rgba(0, 0, 0, 0.7) inset;
+}
+
+@media (min-width: 319px) and (max-width: 767.98px) {
+  .rowPrimary {
+    padding: 0;
+  }
+
 }

@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 .inicio {
     background-image: url("../../../assets/img/img-7.jpg");
     background-size: cover;
@@ -145,6 +151,7 @@
     padding-top: 200px;
     position: relative;
     padding-bottom: 150px;
+    overflow: hidden;
 
 }
 
@@ -243,4 +250,58 @@
 
 .card-body i {
     color: #bfbd31;
+}
+
+@media (min-width: 319px) and (max-width: 767.98px) {
+
+
+    .sobre-imagen img {
+        width: 200px !important;
+        overflow: hidden;
+
+    }
+
+    .sobre-imagen {
+        padding: 20px 0;
+        justify-content: center;
+
+    }
+
+    .sobre-texto {
+        text-align: center;
+
+    }
+
+    .sobre-texto p {
+        padding: 10px 10px 20px 10px;
+
+
+    }
+
+    .blog {
+        grid-template-columns: auto;
+    }
+
+    .texto-blog {
+        top: 5%;
+        position: relative;
+        text-align: center;
+        padding-left: 5px;
+
+    }
+
+    .texto-blog p {
+        width: 100%;
+        padding-bottom: 15px;
+
+
+    }
+
+    .texto-inicio p::after {
+
+        position: relative;
+
+    }
+
+
 }
