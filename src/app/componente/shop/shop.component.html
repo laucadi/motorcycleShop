@@ -3,169 +3,65 @@
         <h1>Tienda Motera</h1>
     </div>
 </main>
-<div class="barra">
+<!--<div class="barra">
     <div class="botones">
         <div class="btn-group">
-            <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            <button type="button">
                 Vestuario
             </button>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#"> Chaquetas</a></li>
-                <li><a class="dropdown-item" href="#">guantes</a></li>
-                <li><a class="dropdown-item" href="#">pantalones</a></li>
-                <li>
-                    <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Separated link</a></li>
-            </ul>
         </div>
         <div class="btn-group">
-            <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            <button type="button">
                 Maletas
             </button>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Baul Aluminio</a></li>
-                <li><a class="dropdown-item" href="#">Baul plastico</a></li>
-                <li><a class="dropdown-item" href="#">Baul tela</a></li>
-                <li>
-                    <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Separated link</a></li>
-            </ul>
         </div>
         <div class="btn-group">
-            <button type="button" class="btn  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            <button type="button">
                 Cascos
             </button>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Givi</a></li>
-                <li><a class="dropdown-item" href="#">Shaft</a></li>
-                <li><a class="dropdown-item" href="#">Control</a></li>
-                <li>
-                    <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Separated link</a></li>
-            </ul>
         </div>
         <div class="btn-group">
-            <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            <button type="button">
                 Protecciones
             </button>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Coderas</a></li>
-                <li><a class="dropdown-item" href="#">Rodilleras</a></li>
-                <li><a class="dropdown-item" href="#">Pechera</a></li>
-                <li>
-                    <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Separated link</a></li>
-            </ul>
         </div>
 
     </div>
-</div>
+</div>-->
 
 <div class="cascos">
     <div class="titulo row">
-        <div class="col-6 casco-1" style="padding-left: 50px; margin-top: 50px; color:aliceblue;">
-            <h3>Cascos</h3>
-        </div>
-        <div class="col-6 casco-2" style="text-align: end; padding-right: 50px; margin-top: 50px;">
-            <a href="">ver todos</a>
+        <div class="col-6 casco-1 d-flex ">
+            <h3 class="ps-4 mt-4 text-light">Articulos</h3>
+            <button class="btn " type="submit" routerLink="/carrito">
+                <img src="assets/img/shopping-bag.png" alt="" width="30px">
+                <div style="font-size: 10px;" class="badge bg-success">{{totalProductos}}</div>
+            </button>
+
         </div>
     </div>
     <div class="tarjetas row">
-        <div class="card" style="width: 18rem;">
-            <a href=""><img
-                    src="https://firebasestorage.googleapis.com/v0/b/motos-y-accesorios.appspot.com/o/1272613243%201.png?alt=media&token=b118203d-bb31-43db-a233-e3f9441646c6"
-                    class="card-img-top" alt="..."></a>
+        <div class="card" style="width: 18rem;" *ngFor="let item of articulos">
+            <a href=""><img [src]='item.image' class="card-img-top" alt="..."></a>
             <div class="card-body">
-                <h5>AIROH</h5>
-                <p class="card-text">Casco brillante TWIST 2.0 BIT</p>
-                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <a href=""><img
-                    src="https://firebasestorage.googleapis.com/v0/b/motos-y-accesorios.appspot.com/o/CMSK81.png?alt=media&token=4eb899da-ca27-4728-8f7f-905c230ced32"
-                    class="card-img-top" alt="..."></a>
-            <div class="card-body">
-                <h5>GIVI 3000</h5>
-                <p class="card-text">Casco mate 3000D2.</p>
-                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <a href=""><img
-                    src="https://firebasestorage.googleapis.com/v0/b/motos-y-accesorios.appspot.com/o/CMSK81.png?alt=media&token=4eb899da-ca27-4728-8f7f-905c230ced32"
-                    class="card-img-top" alt="..."></a>
+                <h6>{{item.name}}</h6>
+                <p class="card-text"> {{item.price |currency : 'USD' : 'symbol' : '1.0-0'}}</p>
+                <button class="btn btn-dark" (click)="addCarrito(item)"><i
+                        class="fa-solid fa-cart-arrow-down"></i></button>
 
-            <div class="card-body">
-                <h5>SHAFT 2.3</h5>
-                <p class="card-text">Casco brillante modelo 2.3.0</p>
-                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
             </div>
         </div>
     </div>
-</div>
 
-<div class="cascos">
-    <div class="titulo row">
-        <div class="col-6 casco-1" style="padding-left: 50px; margin-top: 50px; color:aliceblue;">
-            <h3>Maletas</h3>
+    <!--<section class="row marcas">
+        <div class="logos col-lg-12">
+            <div class="logo-1"></div>
+            <div class="logo-2"></div>
+            <div class="logo-3"></div>
+            <div class="logo-4"></div>
         </div>
-        <div class="col-6 casco-2" style="text-align: end; padding-right: 50px; margin-top: 50px;">
-            <a href="">ver todos</a>
-        </div>
-    </div>
-    <div class="tarjetas row">
-        <div class="card" style="width: 18rem;">
-            <a href=""><img
-                    src="https://firebasestorage.googleapis.com/v0/b/motos-y-accesorios.appspot.com/o/E43NMAL%2B.png?alt=media&token=034bb0fa-4444-4fa0-bc92-3dc7101db298"
-                    class="card-img-top" alt="..."></a>
-            <div class="card-body">
-                <h5>Maleta GIVI E45</h5>
-                <p class="card-text">Maleta plastico 30L</p>
-                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <a href=""><img
-                    src="https://firebasestorage.googleapis.com/v0/b/motos-y-accesorios.appspot.com/o/OBKN58A.jpg?alt=media&token=efecf6fe-0e86-485c-8f19-4e8445fe7976"
-                    class="card-img-top" alt="..."></a>
-            <div class="card-body">
-                <h5>Maleta GIVI L145</h5>
-                <p class="card-text">Maleta aluminio</p>
-                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <a href=""><img
-                    src="https://firebasestorage.googleapis.com/v0/b/motos-y-accesorios.appspot.com/o/OBKN58A.jpg?alt=media&token=efecf6fe-0e86-485c-8f19-4e8445fe7976"
-                    class="card-img-top" alt="..."></a>
-            <div class="card-body">
-                <h5>Maleta GIVI L145</h5>
-                <p class="card-text">Maleta aluminio outback</p>
-                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            </div>
-        </div>
-    </div>
-</div>
-<section class="row marcas">
-    <div class="logos col-lg-12">
-        <div class="logo-1"></div>
-        <div class="logo-2"></div>
-        <div class="logo-3"></div>
-        <div class="logo-4"></div>
-    </div>
-</section>
-<section class="video">
-    <video src="assets/img/video-1.mp4" autoplay loop></video>
+    </section>-->
+    <section class="video">
+        <video src="assets/img/video-1.mp4" autoplay loop></video>
 
-</section>
+    </section>

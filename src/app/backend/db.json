@@ -1,0 +1,116 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Casco AIROH",
+      "description": "Casco brillante TWIST 2.0 BIT",
+      "price": 400000,
+      "image": "https://firebasestorage.googleapis.com/v0/b/motos-y-accesorios.appspot.com/o/1272613243%201.png?alt=media&token=b118203d-bb31-43db-a233-e3f9441646c6",
+      "categoria": "casco"
+    },
+    {
+      "id": 2,
+      "name": "Casco GIVI 3000",
+      "description": "Casco mate 3000D2",
+      "price": 1200000,
+      "image": "https://firebasestorage.googleapis.com/v0/b/motos-y-accesorios.appspot.com/o/1272613243%201.png?alt=media&token=b118203d-bb31-43db-a233-e3f9441646c6",
+      "categoria": "casco"
+    },
+    {
+      "id": 3,
+      "name": "Casco SHAFT 2.3",
+      "description": "Casco brillante modelo 2.3.0",
+      "price": 500000,
+      "image": "https://firebasestorage.googleapis.com/v0/b/motos-y-accesorios.appspot.com/o/CMSK81.png?alt=media&token=4eb899da-ca27-4728-8f7f-905c230ced32",
+      "categoria": "casco"
+    },
+    {
+      "id": 4,
+      "name": "Maleta GIVI E45",
+      "description": "Maleta plastico 30L",
+      "price": 200000,
+      "image": "https://firebasestorage.googleapis.com/v0/b/motos-y-accesorios.appspot.com/o/E43NMAL%2B.png?alt=media&token=034bb0fa-4444-4fa0-bc92-3dc7101db298",
+      "categoria": "maleta"
+    },
+    {
+      "id": 5,
+      "name": "Maleta GIVI L145",
+      "description": "Maleta aluminio 32L",
+      "price": 1250000,
+      "image": "https://firebasestorage.googleapis.com/v0/b/motos-y-accesorios.appspot.com/o/OBKN58A.jpg?alt=media&token=efecf6fe-0e86-485c-8f19-4e8445fe7976",
+      "categoria": "maleta"
+    },
+    {
+      "id": 6,
+      "name": "Maleta GIVI L23",
+      "description": "Maleta aluminio outback",
+      "price": 1300000,
+      "image": "https://firebasestorage.googleapis.com/v0/b/motos-y-accesorios.appspot.com/o/OBKN58A.jpg?alt=media&token=efecf6fe-0e86-485c-8f19-4e8445fe7976",
+      "categoria": "maleta"
+    },
+    {
+      "id": 7,
+      "name": "Guante SHAFT STUNT Legacy",
+      "description": "Estos guantes shaft stunt son el elemento para contar historias de aventura. Gracias a sus correctos ajustes en las palmas, los aspectos protectores en toda la mano y la facilidad operativa que dejan los detalles táctiles en los dedos son el acompañante ideal para tus rodadas. Además, su diseño exclusivo complementa tu pinta al ir sobre tu moto.",
+      "price": 80000,
+      "image": "https://inducascos.vtexassets.com/arquivos/ids/497844-800-auto?v=637903062730470000&width=800&height=auto&aspect=true",
+      "categoria": "guantes"
+    },
+    {
+      "id": 8,
+      "name": "Guante BULLET 778",
+      "description": "Rodar en tu moto es entender que las manos son fundamentales y merecen ser consentidas. Por eso, comprar unos guantes bullet 778 es ideal para que estén protegidas, gracias a sus materiales de cuero sintético y neopreno, además de estar aseguradas con los refuerzos en los nudillos",
+      "price": 60000,
+      "image": "https://inducascos.vtexassets.com/arquivos/ids/311711-800-auto?v=637795175842370000&width=800&height=auto&aspect=true",
+      "categoria": "guantes"
+    },
+    {
+      "id": 9,
+      "name": "Guante BULLET 801",
+      "description": "Proteger tus manos no es solo recubrirlas sino proveerles el material para que estén cómodas. Por eso, estos guantes bullet 801 vienen equipados para darte el mejor confort con su composición de cuero y lycra. Además, son ideales para climas cálidos por la frescura que transmiten.",
+      "price": 60000,
+      "image": "https://inducascos.vtexassets.com/arquivos/ids/505529-800-auto?v=637935014951170000&width=800&height=auto&aspect=true",
+      "categoria": "guantes"
+    },
+    {
+      "id": 10,
+      "name": "Guante DAINESE DESERT POON D1 UNISEX 631",
+      "description": "Popular por su ajuste perfecto y su impresionante comodidad, el guante Desert Poon D1 de Dainese presenta una construcción de tela elástica transpirable, además de un puño de neopreno. Excelente en un ambiente urbano, y con el plus la tecnología Smart Touch de la marca en los dedos índices para usar con teléfonos inteligentes.",
+      "price": 350000,
+      "image": "https://inducascos.vtexassets.com/arquivos/ids/507954-800-auto?v=637943516314370000&width=800&height=auto&aspect=true",
+      "categoria": "guantes"
+    },
+    {
+      "id": 11,
+      "name": "Conjunto Impermeable SHAFT 410 RW",
+      "description": "El increible impermeable Shaft 410_rw trae cuatro opciones de colores, mucha comodidad y mucha visibilidad. Esta es la fórmula mágica con la que este impermeable shaft 410_rw te ayudará a protegerte de la lluvia, a ser visible para los demás actores viales y a no perder tu estilo.",
+      "price": 160000,
+      "image": "https://inducascos.vtexassets.com/arquivos/ids/343800-800-auto?v=637843507808970000&width=800&height=auto&aspect=true",
+      "categoria": "impermeables"
+    },
+    {
+      "id": 12,
+      "name": "Conjunto Impermeable TECH 50 RW Pvc",
+      "description": "Es la hora de que pruebes un conjunto impermeable sin igual gracias a la protección en su chaqueta y pantalón, sobre todo para esos climas que parecen adversos al momento de ir en la moto.",
+      "price": 115000,
+      "image": "https://inducascos.vtexassets.com/arquivos/ids/507924-800-auto?v=637943514804330000&width=800&height=auto&aspect=true",
+      "categoria": "impermeables"
+    },
+    {
+      "id": 13,
+      "name": "Conjunto Impermeable SHAFT 560 XLITE",
+      "description": "Brilla y hazte sentir con este impermeable de shaft 560 xlite. Su material completamente reflectivo es sinónimo de seguridad y garantía de visibilidad. Además, el nylon, uno de sus materiales principales, hace de este un producto muy cómodo y generando ligereza al conducir tu moto. Y, lo más importante, te protege de la lluvia y los vientos.",
+      "price": 170000,
+      "image": "https://inducascos.vtexassets.com/arquivos/ids/312699-800-auto?v=637795199679970000&width=800&height=auto&aspect=true",
+      "categoria": "impermeables"
+    },
+    {
+      "id": 14,
+      "name": "Conjunto Impermeable LS2 TONIC_MAN 6200rs154",
+      "description": "Protegerse de la lluvia también es cuestión de seguridad y qué mejor que contar con la garantía de los mejores. Por eso, te presentamos el Impermeable LS2 TONIC MAN, un conjunto de pantalón y chaqueta fabricados en la comodidad del poliéster, con ventilación. Con ajustes en sus muñecas, la chaqueta es reflectiva y garantiza que seas visible en los ambientes de lluvia o nocturnos.",
+      "price": 390000,
+      "image": "https://inducascos.vtexassets.com/arquivos/ids/508104-800-auto?v=637943624453970000&width=800&height=auto&aspect=true",
+      "categoria": "impermeables"
+    }
+  ]
+}

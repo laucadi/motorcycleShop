@@ -5,22 +5,19 @@ import { CarruselComponent } from './componente/carrusel/carrusel.component';
 import { LoginComponent } from './componente/login/login.component';
 import { BlogsComponent } from './componente/blogs/blogs.component';
 import { ShopComponent } from './componente/shop/shop.component';
-
-
-
+import { CarritoComprasComponent } from './componente/carrito-compras/carrito-compras.component';
 
 const routes: Routes = [
-  {path: 'formulario',component:FormularioUnoComponent},
-  {path: '',component:CarruselComponent},
-  {path: 'login',component:LoginComponent},
-  {path: 'blogs',component: BlogsComponent},
-  {path: 'shop',component: ShopComponent}
-
-
+  { path: 'formulario', component: FormularioUnoComponent },
+  { path: '', component: CarruselComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'blogs', component: BlogsComponent },
+  { path: 'shop', component: ShopComponent },
+  { path: 'carrito', component: CarritoComprasComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

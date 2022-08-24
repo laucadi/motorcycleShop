@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
+
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './componente/navbar/navbar.component';
 import { FormularioUnoComponent } from './componente/formulario-uno/formulario-uno.component';
@@ -11,6 +12,7 @@ import { LoginComponent } from './componente/login/login.component';
 import { MapViewComponent } from './componente/map-view/map-view.component';
 import { BlogsComponent } from './componente/blogs/blogs.component';
 import { ShopComponent } from './componente/shop/shop.component';
+import { CarritoComprasComponent } from './componente/carrito-compras/carrito-compras.component';
 
 @NgModule({
   declarations: [
@@ -22,13 +24,11 @@ import { ShopComponent } from './componente/shop/shop.component';
     LoginComponent,
     MapViewComponent,
     BlogsComponent,
-    ShopComponent
+    ShopComponent,
+    CarritoComprasComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
